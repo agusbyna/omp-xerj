@@ -1,0 +1,36 @@
+{
+  "name": "omp-xerj",
+  "version": "0.1.0",
+  "description": "Thin omp wrapper around the xerj CLI: /xerj <subcommand>",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "omp",
+    "omp-extension",
+    "pi-extension",
+    "pi-coding-agent",
+    "xerj",
+    "search"
+  ],
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "files": [
+    "extension.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./extension.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*"
+  },
+  "peerDependenciesMeta": {
+    "@mariozechner/pi-coding-agent": {
+      "optional": true
+    }
+  }
+}
